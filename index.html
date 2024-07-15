@@ -1,217 +1,457 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Bootstrap  Style -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <!-- Bootstrap Js -->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <!-- Bootstrap Icons CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
-      rel="stylesheet">
-  </head>
-  <body>
-    <!--  create header  -->
-    <header>
-      <nav class="navbar navbar-expand-lg bg-white p-0">
-        <div class="container-fluid container-lg">
-          <a class="navbar-brand" href="#">
-            <img src="assets/img/logo.png" alt>
-          </a>
-          <form class="d-none d-lg-flex" role="search">
-            <!-- <span><i class="bi bi-search"></i></span>
-                        <input class="form-control me-auto" type="search" placeholder="Search here..." aria-label="Search"> -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Bootstrap  Style -->
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <!-- Bootstrap Js -->
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap Icons CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+  <!--  create header  -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-white align-items-center p-0">
+      <div class="container-fluid  container">
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/logo.png" alt="">
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto">
             <div class="input-group">
-              <span class="input-group-text" id="basic-addon1"><i
-                  class="bi bi-search"></i></span>
-              <input type="text" class="form-control"
-                placeholder="Search here..." aria-label="Username"
-                aria-describedby="basic-addon1">
-            </div>
-          </form>
-          <button class="navbar-toggler shadow-none" type="button"
-            data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">
-                  <i class="bi bi-house-fill"></i>
-                  Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">
-                  <i class="bi bi-briefcase-fill"></i>
-                  Jobs
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">
-                  <i class="bi bi-file-earmark-text-fill"></i>
-                  Article
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
-                  <i class="bi bi-bell-fill">
-                    <span class="label-alert">9</span>
-                  </i>
-                  Notification
+              <span class="input-group-text"><i class="bi bi-search"></i></span>
+              <input type="text" class="form-control" placeholder="Search here">
+          </ul>
 
-                </a>
+        </div>
 
+
+        <ul class="navbar-list list-unstyled d-none d-lg-flex ms-auto mb-0">
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <span><img src="assets/img/nav/solid/home.svg" alt=""></span>
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="" class=" nav-link">
+              <span><img src="assets/img/nav/solid/job.svg" alt=""></span>
+              Jobs
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <span><img src="assets/img/nav/solid/news.svg" alt=""></span>
+              Article
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <span><img src="assets/img/nav/solid/notification.svg" alt=""></span>
+              Notifications
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <span><img src="assets/img/profile.jpg" alt=""></span>
+              Me
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button"
-                  data-bs-toggle="dropdown" aria-expanded="false">
-                  <img src="assets/img/profile.jpg" alt class="img-profile">
-                  Me
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Profile</a></li>
-                  <li><a class="dropdown-item" href="#">Setting</a></li>
-                  <li><a class="dropdown-item" href="#">Logout</a></li>
-                </ul>
-              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
+          </li>
+
+        </ul>
+
+        <ul class="navbar-list-hidden list-unstyled d-flex d-lg-none ms-auto mb-0">
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <i class="bi bi-search"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <img src="assets/img/nav/solid/notification.svg" alt="">
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle dropdown-toggle-no-caret" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="assets/img/profile.jpg" alt="">
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+
+    <nav class="navbar-mobile position-fixed  bottom-0 w-100 z-3 bg-white d-flex d-lg-none">
+      <div class="container">
+        <ul class="d-flex d-lg-none list-unstyled justify-content-between">
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <img src="assets/img/nav/solid/home.svg" alt="">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <img src="assets/img/nav/solid/news.svg" alt="">
+              Article
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <img src="assets/img/nav/solid/job.svg" alt="">
+              Jobs
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <img src="assets/img/nav/solid/setting.svg" alt="">
+              Settings
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!--  end of header  -->
+  <!--  create main -->
+  <main class="my-5">
+    <div class="container">
+      <div class="row gy-4">
+
+        <div class="col-12 col-lg-8 h-auto">
+          <div class="card p-3 pb-0 bg-white bg-cover  border-0">
+            <img src="assets/img/group-cover.png" alt="" class="card-img mb-3">
+
+            <div class="card-body p-0 d-flex justify-content-between mb-3">
+              <div class="d-flex">
+                <span><img src="assets/img/group-profile.png" class="card-profile" alt=""></span>
+                <span>
+                  <p class="h3 mb-0">UX UI Design <i class="bi bi-patch-check-fill  text-success"></i></p>
+                  <p><i class="bi bi-lock-fill"></i> Design</p>
+                </span>
+              </div>
+              <div>
+                <button type="button" class="btn bg-btn-profile border-0 me-2">Invite</button>
+                <button type="button" class="btn bg-btn-profile border-0"><i class="bi bi-three-dots"></i></button>
+              </div>
+            </div>
+            <div class="card-footer  bg-transparent border-top-0">
+              <ul class="d-flex list-unstyled">
+                <li>
+                  <a href="" class="text-decoration-none  p-3 border-bottom border-4 border-primary active">Feed</a>
+                </li>
+                <li>
+                  <a href="" class="text-decoration-none  p-3 text-black">Photos</a>
+                </li>
+                <li>
+                  <a href="" class="text-decoration-none  p-3 text-black">Videos</a>
+                </li>
+                <li>
+                  <a href="" class="text-decoration-none  p-3 text-black">Links</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </nav>
-    </header>
-    <!--  end of header -->
 
-    <!--  start deign main content -->
-    <main>
-      <section class="section-cover my-5">
-        <div class="container">
-          <div class="row">
-            <!--  start make content profile  -->
-            <div class="col-12 col-md-8 ">
-              <div class="row">
-                <div class="col-12">
-                  <div class="col-12 mb-3  p-3  bg-white rounded-4 pb-0">
-                    <div class="card border-0">
-                      <img src="asset/img/group-cover.png"  alt="" class="card-img border-0">
-                      <div class="card-body">
-                      <div class="d-flex">
-                             <span class="img-profile">
-                              <img src="asset/img/profile.jpg" alt="">
-                             </span>
-                             <div class="ms-3">
-                                        <p class="card-title">
-                                             UX UI DESIGN 
-                                             <i class="bi bi-patch-check-fill"></i>
-                                             
-                                        </p>
-                                        <p></p>
+        <div class="col-12 col-lg-4 h-auto">
+          <div class="card p-4 rounded-3 border-0">
+            <div class="card-body p-0 border-0 mb-3">
+              <span class="card-title d-flex justify-content-between align-items-center bg-transparent mb-0">
+                <p class="h3">About</p>
+                <p><i class="bi bi-three-dots"></i></p>
+              </span>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est eum sit ipsa! Sit quibusdam, saepe odio
+                nemo magnam officia illo!
+              </p>
+            </div>
+            <div class="card-body p-0 border-0 mb-3">
+              <span class="card-title d-flex justify-content-between align-items-center bg-transparent mb-0">
+                <p class="h3">About</p>
+                <p><i class="bi bi-three-dots"></i></p>
+              </span>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </div>
+            <div class="card-footer bg-transparent border-0   p-0">
+              <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
+                <li>
+                  <i class="bi bi-people me-2"></i> 12 member
+                </li>
+                <li class="text-success">
+                  <i class="bi bi-people me-2 text-black"></i> 6 online
+                </li>
+                <li>
+                  <i class="bi bi-calculator me-2"></i> 1 posted
+                </li>
+                <li>
+                  <i class="bi bi-calendar me-2"></i>Created 01 Jan 2024 by Chhaylay
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 order-lg-4 custom-negative-margin h-auto">
+          <div class="card p-4 rounded-3  border-0">
+            <div class="card-body p-0 border-0 mb-2">
+              <span class="card-title bg-transparent mb-0">
+                <p class="h3">Admin Tool</p>
+            </div>
+            <div class="card-footer ">
+              <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
+                <li>
+                  <i class="bi bi-people me-2"></i> Manage member
+                </li>
+                <li>
+                  <i class="bi bi-person-add"></i> Member request
+                </li>
+                <li>
+                  <i class="bi bi-person-check"></i> Pending approvals
+                </li>
+                <li>
+                  <i class="bi bi-calendar-event"></i> Scheduled posts
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!--  modal click create post -->
+        <div class="modal fade" id="createpost" tabindex="-1" aria-labelledby="examplecreatepost" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header border-bottom-0">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Create post</h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="d-flex align-items-center gap-2">
+                  <img class="profile" src="assets/img/profile.jpg" alt="" />
+                  <div>
+                    <h5>Phorn Phanna</h5>
+                    <div class="btn btn-info text-primary bg-admin">Admin</div>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <p class="text-grey">Write something here...</p>
+                </div>
+                <div class="mt-5 d-flex gap-2">
+                  <button
+                    class="btn bg-photo text-success d-flex align-items-center gap-2 rounded-5"
+                  >
+                  <i class="bi bi-image"></i> Photo
+                  </button>
+                  <button
+                    class="btn bg-emoji d-flex align-items-center gap-2 rounded-5 text-warning"
+                  >
+                  <i class="bi bi-emoji-expressionless-fill"></i> Emoji
+                  </button>
+                  <button
+                    class="btn bg-shedule d-flex align-items-center gap-2 rounded-5 text-primary"
+                  >
+                  <i class="bi bi-emoji-expressionless-fill"></i> Schedule
+                  </button>
+                </div>
+              </div>
+              <div class="modal-footer justify-content-center border-top-0">
+                <div class="d-flex w-100 gap-3">
+                  <button
+                    type="button"
+                    class="btn w-50 btn-cancel-bg"
+                    data-bs-dismiss="modal"
+                  >
+                    cancel
+                  </button>
+                  <button type="button" class="btn btn-info w-50  btn-post-bg text-white">
+                    post
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <!--  end of modal click post -->
+
+        <div class="col-12 col-lg-8 order-lg-3 customized-create-post mb-3 mb-lg-0">
+          <div class="d-flex justify-content-between align-items-center p-3  bg-black bg-white rounded-3">
+            <a href class="profile-create-post">
+              <img src="assets/img/profile.jpg" alt class="profile">
+            </a>
+            <button type="button" class=" bg-create-post py-2 px-3 w-100 mx-2 rounded-3 text-start"
+            data-bs-toggle="modal"
+            data-bs-target="#createpost">Create
+              Post</button>
+            <a href>
+              <img src="assets/img/icon/image.svg" alt>
+            </a>
+
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-8 order-lg-5 customized-post" >
+              <div class="row gy-4">
+                   <div class="col-12">
+                       <div class="card border-0 bg-white p-3">
+                             <div class="card-header">
+                              <div class="d-flex justify-content-between">
+                                     <span class="d-flex">
+                                            <img src="assets/img/profile.jpg"  class="profile" alt="" class="profile">                                          
+                                          <span class="ms-2">
+                                              <p class="h5 mb-0">Phorn Phanna</p>
+                                              <p class="mb-0">Just now  <i class="bi bi-people-fill"></i></p>
+                                          </span>
+                                     </span>
+                                     <span>
+                                      <i class="bi bi-three-dots"></i>
+                                    </span>
+                                    </div>
                              </div>
-                      </div>          
+
+                              <span>
+                                <img src="assets/img/img-post-1.png" alt="" class="card-img">
+                              </span>
+                            
+                             <div class="card-footer">
+                                  <span>
+                                    <img src="assets/img/react/react-heart.svg" alt="">
+                                    <img src="assets/img/react/comment.svg" alt="">
+                                    <img src="assets/img/react/share.svg" alt="">
+                                  </span>
+                                    <div class="d-flex justify-content-between align-items-center py-3  rounded-3 ">
+                                      <a href class="profile-create-post">
+                                        <img src="assets/img/profile.jpg" alt class="profile">
+                                      </a>
+                                      <button type="button" class="bg-transparent  border py-2  px-3 w-100 mx-2 rounded-3 d-flex align-items-center justify-content-between"
+                                        data-bs-target="#createpost">
+                                        <span class="">Add comment...</span>
+                                        <span>
+                                          <img src="assets/img/icon/img.svg" alt="" class="me-2">
+                                          <img src="assets/img/icon/emoji.svg" alt="" class="me-2">
+                                          <img src="assets/img/icon/share.svg" alt="" class="me-2"> 
+                                        </span>
+                                        </button> 
+                                    </div>
+                             </div>
+                       </div>
+                   </div>
+                   <div class="col-12">
+                    <div class="card border-0 bg-white p-3">
+                          <div class="card-header  mb-3">
+                           <div class="d-flex justify-content-between">
+                                  <span class="d-flex">
+                                         <img src="assets/img/profile.jpg"  class="profile" alt="" class="profile">                                          
+                                       <span class="ms-2">
+                                           <p class="h5 mb-0">Phorn Phanna</p>
+                                           <p class="mb-0">Just now  <i class="bi bi-people-fill"></i></p>
+                                       </span>
+                                  </span>
+                                  <span>
+                                   <i class="bi bi-three-dots"></i>
+                                 </span>
+                                 </div>
+                          </div>
+                          <div class="post d-flex justify-content-between">
+                           <img src="assets/img/img-post-1.png" alt="" class="custom-multiple-post">
+                           <img src="assets/img/img-post2.1.png" alt="" class="custom-multiple-post">
+                          </div>
+                          <div class="card-footer">
+                            <span>
+                              <img src="assets/img/react/react-heart.svg" alt="">
+                              <img src="assets/img/react/comment.svg" alt="">
+                              <img src="assets/img/react/share.svg" alt="">
+                            </span>
+                              <div class="d-flex justify-content-between align-items-center py-3  rounded-3 ">
+                                <a href class="profile-create-post">
+                                  <img src="assets/img/profile.jpg" alt class="profile">
+                                </a>
+                                <button type="button" class="bg-transparent  border py-2  px-3 w-100 mx-2 rounded-3 d-flex align-items-center justify-content-between"
+                                  data-bs-target="#createpost">
+                                  <span class="">Add comment...</span>
+                                  <span>
+                                    <img src="assets/img/icon/img.svg" alt="" class="me-2">
+                                    <img src="assets/img/icon/emoji.svg" alt="" class="me-2">
+                                    <img src="assets/img/icon/share.svg" alt="" class="me-2"> 
+                                  </span>
+                                  </button> 
+                              </div>
+                       </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="bg-white p-3 rounded-3">
+                    <div class="d-flex">
+                      <p class="placeholder-glow">
+                        <span
+                          class="placeholder col-1"
+                          style="height: 70px; width: 70px; border-radius: 100%"
+                        ></span>
+                      </p>
+                      <div class="placeholder-glow w-100 ms-2">
+                        <p class="mb-0"><span class="placeholder w-50"></span></p>
+                        <p><span class="placeholder" style="width: 25%"></span></p>
                       </div>
                     </div>
-
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div
-                    class="d-flex justify-content-between align-items-center py-2 p-3  bg-white rounded-4">
-                    <a href>
-                      <img src="assets/img/profile.jpg" alt class="profile">
-                    </a>
-                    <button type="button"
-                      class="bg-transparent border py-2 px-3 w-100 mx-2 rounded-3 text-start"
-                      data-bs-toggle="modal" data-bs-target="#createpost">Create
-                      Post</button>
-                    <a href>
-                      <img src="assets/img/icon/image.svg" alt>
-                    </a>
-
+      
+                    <div class="mt-3">
+                      <p class="placeholder-glow">
+                        <span class="placeholder col-10"></span>
+                      </p>
+                      <p class="placeholder-glow">
+                        <span class="placeholder col-8"></span>
+                      </p>
+                    </div>
+                    <div class="mt-3">
+                      <p class="placeholder-glow mb-1">
+                        <span class="placeholder col-12" style="height: 300px"></span>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!--  start make content information -->
-            <div class="col-12 col-md-4 ">
-              <div class="row g-4 ">
-                <div class="col-12   pb-0 rounded-4">
-                  <div class="card border-0">
-                    <div class="card-body">
-                      <h5 class="card-title">About</h5>
-                      <p class="card-text fs-text">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Necessitatibus dolorem exercitationem corrupti et
-                        ipsum ab autem qui eius doloremque vero!
-                      </p>
-                      <h5 class="card-title">About</h5>
-                      <p class="card-text fs-text">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing
-                        elit. Necessitatibus dolorem 
-                      </p>
-                    </div>
-                    <div class="card-body">
-                        <div class="icon d-flex gap-3"> <i class="bi bi-people"></i> <span>12 memebar </span></div>
-                        <div class="icon d-flex gap-3"> <i class="bi bi-people"></i> <span class="text-success">6 online </span></div>
-                        <div class="icon d-flex gap-3"> <i class="bi bi-people"></i> <span>12 1 Posted </span></div>
-                        <div class="icon d-flex gap-3"> <i class="bi bi-calendar2-week"></i> <span> Created 01 jan 2024 Chhay lay </span></div>
-                    </div>
-                     
-                  </div>
-                </div>
-                <div class="col-12   rounded-4 ">
-                    <div class="card border-0">
-                        <div class="card-body">
-                            <h5 class="card-title">About</h5>
-                            <p class="card-text fs-text">
-                              Lorem ipsum dolor sit, amet consectetur adipisicing
-                              elit. Necessitatibus dolorem exercitationem corrupti et
-                              ipsum ab autem qui eius doloremque vero!
-                            </p>
-                            <h5 class="card-title">About</h5>
-                            <p class="card-text fs-text">
-                              Lorem ipsum dolor sit, amet consectetur adipisicing
-                              elit. Necessitatibus dolorem 
-                            </p>
-                          </div>
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </section>
-      <!-- Create Post -->
-      <!-- Modal -->
-      <div class="modal fade" id="createpost" tabindex="-1"
-        aria-labelledby="examplecreatepost" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h1 class="modal-title fs-5" id="examplecreatepost">Modal
-                title</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal"
-                aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary"
-                data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save
-                changes</button>
-            </div>
-          </div>
-        </div>
+
+      
+
       </div>
-    </main>
-    <!--  end of main content -->
+    </div>
+  </main>
+  <!--  end of main-->
 
-  </body>
+
+
+
+</body>
+
 </html>
