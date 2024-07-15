@@ -183,18 +183,57 @@ main .card .card-body div span img{
         margin-top : 0px;
     }
 }
-@media (max-width :1367px ){
+
+@media (min-width :992px ){
+    .col-12.customized-post{
+           margin-top : -260px;
+    }
     .col-12.customized-create-post{
-           margin-top : -80px;
+        margin-top : 0px;
+        margin-top : 0px;
+ }
+}
+
+@media (max-width : 1200px){
+    .col-12.customized-create-post{
+         margin-top : -80px;
+
+
+    }
+}
+@media (max-width :992px){
+    .col-12.customized-post{
+        margin-top : 16px;
+    }
+    .col-12.customized-create-post{
+        margin-top: 24px;
     }
 }
 
-@media (max-width :967px ){
+@media (min-width : 1197px){
+    .col-12.customized-create-post{
+        margin-top : 0px;
+    }
+    .col-12.customized-post{
+        margin-top : -180px;
+ }
+}
+@media (min-width : 1400px){
+    .col-12.customized-create-post{
+        margin-top : 30px;
+    }
+    .col-12.customized-post{
+        margin-top : -120px;
+ }
+}
+
+/* @media (max-width :967px ){
     .col-12.customized-create-post{
            margin-top : 0px;
+           background-color: yellow;
            margin-top : 20px;
     }
-}
+} */
 
 /* @media (max-width : 1200px){
     .col-12.customized-post{
@@ -203,23 +242,25 @@ main .card .card-body div span img{
     }
 } */
 
-@media (max-width : 1200px){
+/* @media (max-width : 1200px){
     .col-12.customized-post{
-        margin-top :-280px;
+        background-color: yellow;
     }
 
-}
+} */
 
-@media (min-width : 1200px){
+/* @media (min-width : 1200px){
     .col-12.customized-post{
-        margin-top :-130px;
+        margin-top :-0px;
+        background: red;
     }
 }
 @media (max-width : 987px){
     .col-12.customized-post{
         margin-top : 0px;
+        background: gray;
     }
-}
+} */
 .card-footer , .card-header {
     background: transparent !important;
     border: none !important;
